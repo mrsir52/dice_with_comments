@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import Dicebag from './components/DiceBag'
 import * as serviceWorker from './serviceWorker';
+
+const App = ( ) => (
+    <Fragment>
+        <Dicebag />
+    </Fragment>
+)
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
